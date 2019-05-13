@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		337C3142228A30D600E71887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C3141228A30D600E71887 /* AppDelegate.swift */; };
-		337C3144228A30D600E71887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C3143228A30D600E71887 /* ViewController.swift */; };
 		337C3147228A30D600E71887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337C3145228A30D600E71887 /* Main.storyboard */; };
 		337C3149228A30DB00E71887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337C3148228A30DB00E71887 /* Assets.xcassets */; };
 		337C314C228A30DB00E71887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337C314A228A30DB00E71887 /* LaunchScreen.storyboard */; };
+		337C3154228A312200E71887 /* HolidaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C3153228A312200E71887 /* HolidaysTVC.swift */; };
+		337C3156228A32C800E71887 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C3155228A32C800E71887 /* Holiday.swift */; };
+		337C3158228A340700E71887 /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C3157228A340700E71887 /* HolidayRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		337C313E228A30D600E71887 /* WebAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337C3141228A30D600E71887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		337C3143228A30D600E71887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		337C3146228A30D600E71887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		337C3148228A30DB00E71887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337C314B228A30DB00E71887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337C314D228A30DB00E71887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337C3153228A312200E71887 /* HolidaysTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysTVC.swift; sourceTree = "<group>"; };
+		337C3155228A32C800E71887 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		337C3157228A340700E71887 /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,31 @@
 			isa = PBXGroup;
 			children = (
 				337C3141228A30D600E71887 /* AppDelegate.swift */,
-				337C3143228A30D600E71887 /* ViewController.swift */,
+				337C3159228A340B00E71887 /* Model */,
+				337C315A228A341100E71887 /* Controller */,
 				337C3145228A30D600E71887 /* Main.storyboard */,
 				337C3148228A30DB00E71887 /* Assets.xcassets */,
 				337C314A228A30DB00E71887 /* LaunchScreen.storyboard */,
 				337C314D228A30DB00E71887 /* Info.plist */,
 			);
 			path = WebAPI;
+			sourceTree = "<group>";
+		};
+		337C3159228A340B00E71887 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				337C3155228A32C800E71887 /* Holiday.swift */,
+				337C3157228A340700E71887 /* HolidayRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		337C315A228A341100E71887 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				337C3153228A312200E71887 /* HolidaysTVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337C3144228A30D600E71887 /* ViewController.swift in Sources */,
+				337C3156228A32C800E71887 /* Holiday.swift in Sources */,
+				337C3154228A312200E71887 /* HolidaysTVC.swift in Sources */,
+				337C3158228A340700E71887 /* HolidayRequest.swift in Sources */,
 				337C3142228A30D600E71887 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
